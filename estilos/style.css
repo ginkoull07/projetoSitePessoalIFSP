@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilo da logo*/
+.logo{
+    height: auto; /*Altura da imagem*/
+    width: 90px; /*Largura da imagem*/
+    border-radius: 50%; /*Arredondamento da borda*/
+}
+
+/*Estilo do cabeçalho*/
+body>header{
+    background-color: rgb(40, 40, 40); /*Cor do fundo*/
+    color: antiquewhite; /*cor do texto*/
+    display: flex; /*posição em relação a tela*/
+    align-items: center; /*alinhamento dos itens do elemento*/
+    padding: 20px; /*espaçamento interno*/
+    position: relative; /*posição do elemento*/
+    top: 0;
+    width: 100%;
+    height: 80px;
+    justify-content: start;
+    z-index: 1100; /*Mantém o cabeçalho acima do resto*/
+    /*define a camada do elemento*/
+}
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+header figure{
+    margin: 0 15px;
+}
+
+/*estilo para barra de navegação*/
+nav{
+    background-color: rgb(60, 60, 60);
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    margin: 0 50px;
+    position: relative;
+    display: block;
+    clear: both;
+    z-index: 1100;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;   
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: darkgoldenrod;
+    cursor: pointer;
+}
+
+/*estilo do conteúdo principal*/
+main{
+    padding: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(60, 60, 60);
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin: 0 50px;
+    border-radius: 10px;
+}
+
+body{
+    background-color: rgb(80, 80, 80);
+    color: antiquewhite;
+    z-index: 900;   
+}
+
+main ul{
+    list-style-type: upper-roman;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+main ul li{
+    list-style-position: inside;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+main h2{
+    padding: 20px;
+}

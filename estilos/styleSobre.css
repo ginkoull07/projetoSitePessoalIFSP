@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main>section{
+    width: 100%;;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+h2{
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.perfil{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.perfil p{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+section header{
+    all: unset;
+    display: inline-block;
+    background-color: rgb(60 60 60);
+    padding: 4px  10px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section{
+    float: left;
+    width: 70%;
+    margin-top: 0;
+}
+
+section ul{
+    margin-top: 10px;
+    padding-left: 0; /*Remove recuo padrâo da lista não ordenada*/
+    text-align: center;
+}
+
+section ul li{
+    list-style: square;
+    list-style-position: inside; /*Mantém o marcador junto com o texto*/
+}
+
+/*Animação hover*/
+section ul li:hover{
+    color: darkgoldenrod;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+aside{
+    width: 30%;
+    background-color: rgb(60 60 60);
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    float: right;
+}
+
+footer{
+    clear: both;    
+}
+
+@media(max-width:768px){
+    .perfil{
+        flex-direction: column;
+        text-align: center;
+    }
+    section, aside{
+        float: none;
+        width: 100%;
+    }
+    aside{
+        margin-top: 20px;
+
+    }
+}
